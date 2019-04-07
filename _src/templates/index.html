@@ -2,14 +2,32 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<title>Adalab Web Starter Kit</title>
+	<title>risotto de setas</title>
   <link rel="icon" href="favicon.png"/>
 	<link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
   <div class="page">
-    <partial src="_header.html" label="Header"></partial>
-    <partial src="_main.html" label="Main"></partial>
+      <header class="page__header">
+          <p class="header__text">ingredientes</p>
+          <h1 class="header__title"></h1>
+          <div class="selectbtn__container">
+            <button class="selectbtn selectall">seleccionar todo</button>
+            <button class="selectbtn unselectall">deseleccionar todo</button>
+          </div>
+        </header>
+        <main class="page__main">
+            <div class="ingredientlist__container">
+            </div>
+            <div class="total__container">
+              <p class="total__item">items</p>
+              <p class="totalingredients__price">subtotal</p>
+              <p class="total__shipping">gastos de envio</p>
+              <p class="total__payment">total</p>
+            </div>
+            <button class="btn__buy">compar ingredientes:</button>
+          </main>
   </div>
+  <script src="../assets/js/main.js" type="text/javascript"></script>
 </body>
 </html>
