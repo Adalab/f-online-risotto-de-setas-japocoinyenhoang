@@ -1,7 +1,7 @@
 {
 	"recipe": {
 		"name": "Risotto de setas (vegano)",
-		"shipping-cost": 7,
+		"shippingcost": 7,
 		"currency": "€",
 		"ingredients": [
 			{
