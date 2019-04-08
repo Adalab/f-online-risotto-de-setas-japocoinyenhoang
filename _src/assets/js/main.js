@@ -45,17 +45,19 @@ const listIngredients = (recipe) => {
     <p class ="ingredient__quantity">${item.quantity}</p>
     <p class="ingredient__unitPrice">${item.price} ${recipe.currency}</p>
     `;
-	}
-};
-
-const handleCheck = () => {
-	let ingredientsToCheck = document.querySelectorAll('.ingredient__checkbox');
-	for (let check of ingredientsToCheck) {
-		if ((check.checked = true)) {
-			check.push(selectedIngredients);
+		let ingredientsToCheck = document.querySelectorAll('.ingredient__checkbox');
+		for (let check of ingredientsToCheck) {
+			const handleCheck = () => {
+				if (check.checked === true) {
+					selectedIngredients.push(item);
+					console.log(selectedIngredients);
+				}
+			};
+			check.addEventListener('click', handleCheck);
 		}
 	}
 };
+
 const selected = () => {
 	for (let check of selectedIngredients) {
 		price += number(check.value);
